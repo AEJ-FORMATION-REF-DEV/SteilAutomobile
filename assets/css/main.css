@@ -9,8 +9,8 @@
 /* Colors */
 :root {
   --color-default: #364d59;
-  --color-primary: #feb900;
-  --color-secondary: #52565e;
+  --color-primary: #e41a20; 
+  --color-secondary: #52565e; 
 }
 
 /* Smooth scroll behavior */
@@ -33,7 +33,7 @@ a {
 }
 
 a:hover {
-  color: #ffc732;
+  color: #e41a20;
   text-decoration: none;
 }
 
@@ -1142,7 +1142,7 @@ section {
   line-height: 0;
   color: var(--color-primary);
   border-radius: 50%;
-  border: 2px dotted #ffd565;
+  border: 2px dotted #5b5a5a;
 }
 
 .contact .info-item h3 {
