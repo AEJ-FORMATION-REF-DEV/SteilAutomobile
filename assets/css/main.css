@@ -6,6 +6,7 @@
   --font-secondary: "Work Sans", sans-serif;
 }
 
+
 /* Colors */
 :root {
   --color-default: #364d59;
@@ -45,7 +46,9 @@ h5,
 h6 {
   font-family: var(--font-primary);
 }
-
+.title-home{
+  color: var(--color-default) !important;
+}
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -202,6 +205,37 @@ section {
 .header .logo h1 span {
   color: var(--color-primary);
 }
+
+
+/*--------------------------------------------------------------
+# Header sauf index
+--------------------------------------------------------------*/
+#header {
+  z-index: 997;
+  padding: 30px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+}
+
+#header .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+#header .logo h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: var(--font-primary);
+}
+
+#header .logo h1 span {
+  color: var(--color-primary);
+}
+
 
 /*--------------------------------------------------------------
 # Desktop Navigation
