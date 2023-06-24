@@ -501,7 +501,7 @@ section {
 # About Section
 --------------------------------------------------------------*/
 .get-started .content {
-  padding: 30px 0;
+  padding: 30px 30px;
 }
 
 .get-started .content h3 {
@@ -525,7 +525,9 @@ section {
 }
 
 .get-started .content p {
-  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-size: 21px;
 }
 
 .get-started .php-email-form {
@@ -665,7 +667,7 @@ section {
 }
 
 .vente_vehicule:hover{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.548)), url("../img/vente_vehicules.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.548)), url("../img/vente_engin.jpg");
   background-size: cover;
   transition: all 0.6s ease-out;
   
