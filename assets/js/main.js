@@ -1,3 +1,11 @@
+// Vérifier si le cookie existe
+if (document.cookie.indexOf("visited") === -1) {
+  // Si le cookie n'existe pas, afficher le message de bienvenue
+  document.getElementById("welcome-message").classList.remove("hidden");
+  
+  // Définir le cookie pour indiquer que le visiteur a déjà visité la page
+  document.cookie = "visited=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
@@ -169,27 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     /** Init Logo */
-    new Swiper('.slides-1', {
-      speed: 600,
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-      },
-      slidesPerView: 'auto',
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      }
-    });
-  
-    /** Init swiper slider with 2 slides at once in desktop view */
-    new Swiper('.slides-2', {
+   
+    new Swiper('.slides-3', {
       speed: 600,
       loop: true,
       autoplay: {
@@ -213,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
   
         1200: {
-          slidesPerView: 2,
+          slidesPerView: 4,
           spaceBetween: 20
         }
       }
@@ -236,3 +225,4 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
