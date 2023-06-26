@@ -17,6 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">  <!-- Eshop StyleSheet -->
+	
 
   <!-- CDN link CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,16 +38,34 @@
   <link rel="stylesheet" href="eshop/css/slicknav.min.css">
 	
 	<!-- Eshop StyleSheet -->
-	<link rel="stylesheet" href="eshop/css/reset.css">
     <link rel="stylesheet" href="eshop/css/responsive.css">
 
 </head>
 
 <body>
   
-  <div id="welcome-message" class="hidden">
-    <p class="text-center p-2" style="font-size: 18px;">Bienvenue sur le site internet de STEIL AUTOMOBILE qui au paravant était appélé .....</p>
-  </div>
+  
+
+    <div class="modal" tabindex="-1" id="welcome_modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center align-items-center">
+            <p style="font-size: 18px;" class="p-2">Bienvenue sur le site internet de <strong>STEIL AUTOMOBILE </strong>, anciennement connu sous le nom de [Ancien nom]</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">ACCEDER AU SITE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  
+  
 
   <!-- ======= Header ======= -->
   <header id="" class="header d-flex align-items-center">
@@ -454,7 +474,7 @@
           <div class="row">
       <div class="col-12">
         <div class="section-title">
-          <h2>ENGIN DISPONIBLE</h2>
+          <h2 class="text-center">ENGIN DISPONIBLE</h2>
         </div>
       </div>
           </div>
@@ -628,53 +648,53 @@
     </section>
 
     <!-- ======= Marques Section ======= -->
-    <section id="" class="testimonials">
+    <section id="" class="marques">
       <div class="container-fluid" data-aos="fade-up">
         <h4 class="text-center mb-3">NOS MARQUES DE PIECES AUTO</h4>
 
-        <div class="slides-3 swiper">
+        <div class="slides-3 swiper text-center">
           <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/logo/bmw.png" class="testimonial-img" alt="">
+              <div class="marques-wrap">
+                <div class="marques-item">
+                  <img src="assets/img/logo/bmw.png" class="marques-img" alt="" >
                   
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/logo/hyundai.jpg" class="testimonial-img" alt="">
+              <div class="marques-wrap">
+                <div class="marques-item">
+                  <img src="assets/img/logo/hyundai.jpg" class="marques-img" alt="">
                   
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/logo/Mercedes-Benz.png" class="testimonial-img" alt="">
+              <div class="marques-wrap">
+                <div class="marques-item">
+                  <img src="assets/img/logo/Mercedes-Benz.png" class="marques-img" alt="">
                   
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/logo/Peugeot.jpg" class="testimonial-img" alt="">
+              <div class="marques-wrap">
+                <div class="marques-item">
+                  <img src="assets/img/logo/Peugeot.jpg" class="marques-img" alt="">
                   
                 </div>
               </div>
             </div>
 
             <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <img src="assets/img/logo/toyota.webp" class="testimonial-img" alt="">
+              <div class="marques-wrap">
+                <div class="marques-item">
+                  <img src="assets/img/logo/toyota.webp" class="marques-img" alt="">
                   
                 </div>
               </div>
@@ -698,7 +718,10 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
-              <h3>Steil Automobile</h3>
+              <a href="index.html" class="logo d-flex align-items-center mb-3">
+                <img src="assets/img/logo.png" alt="" class="img-fluid" style="max-height: 50px;">
+                <h4 class="p-3">STEIL AUTOMOBILE</h4>
+              </a>
               <p>
                 Abidjan, ...<br><br>
                 <strong>Téléphone:</strong> +225 0101010101<br>

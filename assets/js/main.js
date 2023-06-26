@@ -1,11 +1,7 @@
 // Vérifier si le cookie existe
-if (document.cookie.indexOf("visited") === -1) {
-  // Si le cookie n'existe pas, afficher le message de bienvenue
-  document.getElementById("welcome-message").classList.remove("hidden");
-  
-  // Définir le cookie pour indiquer que le visiteur a déjà visité la page
-  document.cookie = "visited=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-}
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
@@ -17,6 +13,20 @@ document.addEventListener('DOMContentLoaded', () => {
       preloader.remove();
     });
   }
+
+  $(window).on('load', function() {
+    if (document.cookie.indexOf("visited") === -1) {
+      // Si le cookie n'existe pas, afficher le message de bienvenue
+      document.getElementById("welcome_modal").classList.remove("hidden");
+      $('#welcome_modal').modal('show');
+
+      // Définir le cookie pour indiquer que le visiteur a déjà visité la page
+      document.cookie = "visited=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+    }
+    
+    
+  });
+  
 
   /** Mobile nav toggle */
 
